@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home .band-top .x-section {
+    height: 100vh;
+}
+
+#condo-list {
+    position: absolute;
+    bottom: 30px;
+}
+
+#condo-list .condo-title {
+    background: #D2232A;
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .02em;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    #condo-list .condo-title {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #condo-list > div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 128px) and (max-width: 1350px) {
+    .nav-header {
+        display: none;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 10000px) {
+    .nav-header {
+        display: block;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}
+
+.nav-link {
+    color: black;
+    font-weight: normal !important;
+}
+
+.nav-header {
+    background: white;
+    height: 75px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 3px;
+}
+
+.nav-linker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    font-size: 14px;
+}
+
+
+#contact-us {
+    margin-top: 0 !important;
+}
+
+.dropdown-menu {
+    left: initial;
+}
+
+.search-condos-menu {
+    top: 75px;
+    height: auto;
+}
+
+.search-condos-menu.dropdown-menu > li{
+    background: white;
+}
+
+.search-condos.dropdown-toggle{
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown, #dLabel{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.castom-method > .dropdown-menu{
+    display: none !important;
+}
+
+.castom-method:hover > .dropdown-menu{
+    display: block !important;
+}
+
+.city, .bedrooms, .price, .city-option, .bedrooms-option, .price-option {
+    display: none;
+}
+
+.main:hover > .city,
+.main:hover > .bedrooms,
+.main:hover > .price {
+    display: block;
+}
+
+.city:hover > .city-option,
+.bedrooms:hover > .bedrooms-option,
+.price:hover > .price-option {
+    display: block;
+}
+
+.city-option, .price-option, .bedrooms-option {
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 200px;
+}
+
+.city-option > span, .bedrooms-option > span, .price-option > span {
+    display: block;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+/**AV Start**/
+.nav-header .dropdown-menu > li {
+    text-align: left;
+}
+.nav-header .dropdown-menu > li > a {
+    font-size: 14px;
+}
+.nav-header .broker-logo {
+    height: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+}
+.nav-header .broker-logo a {
+    display: block;
+    padding: 10px 20px;
+    max-width: 180px;
+    width: 100%;
+}
+.mobile__menu {
+    position: relative;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.mobile__menu #menu-btn {
+    position: static;
+    font-size: 18px;
+}
+.mobile__menu #menu-btn .fa.fa-bars {
+    color: #000;
+}
+.mobile__menu .broker-logo {
+    padding: 10px 0;
+}
+.mobile__menu .broker-logo a {
+    max-width: 120px;
+    display: block;
+    padding: 5px 0;
+}
+.mobile__menu .broker-logo a #broker-logo-image {
+    padding: 0 !important;
+    width: auto;
+    height: auto !important;
+    margin: auto !important;
+}
+.mobile_menu_overlay {
+    background-color: rgba(0,0,0,0.4);
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    top: 0px;
+    z-index: 999;
+    transition: all 0.2s ease;
+}
+.menuShow_mobile .mobile_menu_overlay {
+    right: 0px;
+    width: 100%;
+}
+.mobile__menu .main-nav {
+    right: inherit;
+    left: 0;
+    transform: translateX(-500px);
+    width: 0px;
+    transition: width 0.3s ease-in-out;
+}
+.mobile__menu .main-nav.menu-open {
+    right: inherit;
+    left: 0;
+    transform: translateX(0px);
+    padding-top: 0px;
+    width: 260px;
+}
+.mobile_menu_top_logo {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.mobile_menu_top_logo a {
+    max-width: 120px;
+    padding: 15px 0;
+}
+.mobile_menu_top_logo #close {
+    position: static;
+    font-size: 18px;
+}
+.mobile__menu .main-nav ul li a {
+    font-size: 14px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+}
+body.menuShow_mobile {
+    overflow: hidden !important;
+}
+.mobile__menu .main-nav > ul {
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+.mobile__menu .main-nav > ul li > ul a {
+    padding-left: 40px;
+}
+.mobile__menu .main-nav > ul li > ul li > ul a {
+    padding-left: 60px;
+}
+
+@media (min-width: 1350px) {
+    .mobile__menu {
+        display: none;
+    }
+}
+/**AV End**/

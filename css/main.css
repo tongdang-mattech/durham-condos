@@ -1,0 +1,659 @@
+/* Typhography CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.myIframe {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; //<<--- THIS IS THE KEY
+  border: solid black 1px;
+}
+
+.myIframe iframe {
+  position: absolute;
+  top: -260px;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 17px;
+  color: #2a2b3b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-weight: 400;
+}
+
+ul li {
+  list-style: outside none none;
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99999;
+  /* makes sure it stays on top */
+}
+
+@media screen and (min-width: 0px) and (max-width: 460px) {
+  .myframe {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 559px) {
+  .img1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 999px) {
+  .img1 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1519px) {
+  .img1 {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 1520px) and (max-width: 1920px) {
+  .img1 {
+    width: 25%;
+  }
+}
+
+.myiframe {
+  text-align: center;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../img/loader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/* MENU */
+
+#close {
+  color: #1d252e;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 20px;
+  position: absolute;
+  right: 25px;
+  text-align: center;
+  top: 20px;
+  width: 20px;
+}
+
+#menu-btn {
+  color: #5b7182;
+  font-size: 30px;
+  position: fixed;
+  right: 75px;
+  top: 60px;
+  z-index: 99;
+}
+
+.main-nav {
+  background-color: #ffffff;
+  position: fixed;
+  padding-top: 50px;
+  width: 260px;
+  height: 100%;
+  top: 0;
+  right: -260px;
+  z-index: 1000;
+}
+
+.main-nav ul li a {
+  color: #5b7182;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 35px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main-nav ul li > a > i {
+  padding-right: 10px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background: #182029;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #03a9f4;
+}
+
+.main-nav.menu-open {
+  right: 0px;
+}
+
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.main-nav,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Header Area */
+
+header {
+  height: 700px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.services-section {
+  margin-top: 430px;
+  margin-bottom: 30px;
+}
+
+.header-service {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  display: block;
+  line-height: 20px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.header-service a {
+  color: #2a5d9b;
+  font-size: 1.1em;
+}
+
+/* feature-bg */
+
+#feature-bg {
+  background: rgba(0, 0, 0, 0) url("../img/feature-bg.jpg") repeat scroll 0 0;
+  background-position: center bottom;
+  background-size: cover;
+  color: #2b6bab;
+  min-height: 750px;
+}
+
+.feature-title {
+  margin-top: 40px;
+}
+
+.feature-title h2 {
+  color: #2b6bab;
+  margin-bottom: 15px;
+}
+
+/* Feature Services */
+
+.feature-text {
+  margin-bottom: 50px;
+}
+
+.feature-text h4 {
+  color: #2b6bab;
+  margin: 10px 0;
+}
+
+/* Call-to-action */
+
+#call-to-action {
+  background-image: url("../img/action-bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 750px;
+}
+
+.call-to-action-content {
+  margin-top: 50px;
+}
+
+.call-to-action-content > h2 {
+  color: #2b6bab;
+  margin-bottom: 10px;
+}
+
+.call-to-action-content > p {
+  margin-bottom: 20px;
+}
+
+.call-to-action-content a {
+  background: #2b6bab none repeat scroll 0 0;
+  border: 2px solid #2b6bab;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 1;
+  padding: 6px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.call-to-action-content a:after {
+  content: "?";
+  font-family: fontAwesome;
+  margin: -1px 0 0 8px;
+  position: relative;
+}
+
+.call-to-action-content a:hover {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  color: #2b6bab;
+  text-decoration: none;
+}
+
+.call-to-action-content a:visited {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*FOOTER TOP*/
+
+#f-top {
+  margin: 30px 0;
+}
+
+#f-top p a,
+#f-top a {
+  color: #2a2b3b;
+}
+
+#f-top h4 a {
+  color: black;
+}
+
+#f-top i.fa {
+  color: #2b6bab;
+}
+
+/*CONTACT*/
+
+#contact-us {
+  margin: 50px 0 0 0;
+  background: white;
+}
+
+#contact-us h4 {
+  margin-top: 30px;
+}
+
+#contact-us p {
+  margin-bottom: 10px;
+}
+
+#contact-us input[type="submit"] {
+  background: #2b6bab !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+  box-shadow: none !important;
+  border: none !important;
+  line-height: 1.5 !important;
+  font-size: 21px !important;
+  padding: 10px 30px 12px 30px;
+  height: auto;
+}
+
+#contact-us input[type="submit"]:hover {
+  background: white;
+  color: #222;
+}
+
+#contact-us input,
+#contact-us textarea {
+  margin-bottom: 10px;
+}
+
+.map-div {
+  margin-top: 75px;
+}
+
+/* Footer */
+
+footer {
+  background: #2b6bab none repeat scroll 0 0;
+  clear: both;
+  color: #fff;
+}
+
+footer p {
+  font-weight: 300;
+  color: #fff;
+  font-size: 15px;
+}
+
+.footer-text > p#first-text {
+  margin: 20px 0;
+}
+
+.footer-text > p#middle-text {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer img {
+  max-width: 40px;
+  margin: 20px 0;
+}
+
+.x-navbar {
+  display: none !important;
+}
+
+.contact-button-link.separated {
+  margin-top: 0em !important;
+  display: none;
+}
+
+/* Added by Jerez Bain */
+
+/* Styles for floating Listings Buttons */
+
+.buttons-bar {
+}
+
+.buttons-bar.affix {
+  position: fixed !important;
+  bottom: 10px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons-bar.affix-bottom {
+  top: auto !important;
+}
+
+.search-condos-menu {
+  top: initial;
+  bottom: 80%;
+}
+
+.title_downsizers {
+  margin-top: 75px;
+  background: url("../img/bg_title_downsizers.png");
+  background-repeat: no-repeat;
+  padding: 10px 0;
+  background-size: cover;
+  background-position: right;
+  margin-bottom: 15px;
+}
+
+.title_downsizers h3 {
+  color: #fff;
+  padding: 5px 40px;
+  z-index: 10;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.block_downsizers {
+  background: #f7f7f8;
+  padding: 20px 40px;
+  margin: 10px 0;
+}
+
+.block_downsizers span {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.block_right,
+.block_left {
+  position: relative;
+}
+
+.block_right:before {
+  content: "";
+  position: absolute;
+  right: -153px;
+  border-top: 95px solid transparent;
+  border-bottom: 145px solid transparent;
+  border-left: 154px solid #f7f7f8;
+  top: 0;
+}
+
+.block_right:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/22.png");
+  background-repeat: no-repeat;
+  right: -256px;
+  padding: 105px;
+  background-size: 70%;
+  bottom: -128px;
+}
+
+.block_left:before {
+  content: "";
+  position: absolute;
+  left: -153px;
+  border-top: 73px solid transparent;
+  border-bottom: 140px solid transparent;
+  border-right: 154px solid #f7f7f8;
+  top: 0;
+}
+
+.block_left:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/22.png");
+  background-repeat: no-repeat;
+  left: -258px;
+  padding: 105px;
+  background-size: 70%;
+  bottom: -126px;
+  transform: scale(-1, 1);
+}
+
+.block_broker {
+  background: url("../img/bg_broker.png");
+  background-repeat: no-repeat;
+  padding: 10px 0;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.broker_photo {
+  margin-right: 30px;
+}
+
+.broker_text {
+  padding-top: 10px;
+}
+
+.broker_text p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.download_btn {
+  background-color: #0277bd;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding: 14px 39px;
+  border-radius: 9px;
+  border: solid 2px #0277bd;
+}
+
+.download_btn:hover {
+  background: none;
+  color: #0277bd;
+  text-decoration: none;
+  border-color: #0277bd;
+}
+
+.download_btn:focus {
+  background: #0277bd;
+  color: #fff;
+  text-decoration: none;
+  border-color: #0277bd;
+}
+
+@media (max-width: 1200px) {
+  .block_right::before {
+    border-top: 142px solid transparent;
+  }
+  .block_right::after {
+    display: none;
+  }
+  .block_left::after {
+    display: none;
+  }
+  .block_left::before {
+    border-top: 123px solid transparent;
+  }
+}
+
+@media (max-width: 991px) {
+  .block_right::before {
+    display: none;
+  }
+  .block_left::before {
+    display: none;
+  }
+  .col-md-6 .broker-logo {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .broker-logo img {
+    width: 100%;
+    height: auto !important;
+    padding: 20px 50px !important;
+    margin: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* You can change listing button sizes here for desktop */
+  .buttons-bar .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+  }
+}
+
+/* !Added by Jerez Bain */
+
+@media (max-width: 587px) {
+  .search-condos-menu {
+    top: initial;
+    bottom: 115%;
+  }
+}
+
+@media (max-width: 443px) {
+  .block_broker {
+    justify-content: center;
+    background: #66bde6;
+  }
+  .title_downsizers {
+    background: #3c78bd;
+  }
+  .h-custom-headline {
+    font-size: 35px;
+  }
+  .title_downsizers h3 {
+    font-size: 25px;
+  }
+}

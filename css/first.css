@@ -1,0 +1,120 @@
+article {
+	width: 100%;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+.entry-thumb {
+	padding: 10px;
+	overflow: hidden;
+	flex: 0 0 100%;
+}
+
+.thumb-link {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.imageContainer {
+    width: 100%;
+    min-height: 200px;
+    background-size: cover!important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.entry-text {
+    z-index: 3;
+    height: 105px;
+    border-left: 1px solid rgb(232, 233, 234);
+    border-bottom: 1px solid rgb(232, 233, 234);
+    border-right: 1px solid rgb(232, 233, 234);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.pbs {
+    padding-bottom: 5px!important;
+}
+
+.pts {
+    padding-top: 5px!important;
+}
+
+.phm {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+.man {
+    margin: 0!important;
+}
+
+.typeWeightNormal {
+    font-weight: 400!important;
+}
+
+.typeTruncate {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.noWrap, .typeTruncate {
+    white-space: nowrap;
+}
+
+.typeEmphasize {
+    font-weight: 700!important;
+}
+
+.typeDeemphasize, .typeLowlight {
+    color: #869099;
+}
+
+.typePrice {
+	color: #2B6BAB;
+	padding-bottom: 10px;
+}
+
+.h4 {
+	font-size: 24px;
+}
+
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.listInline.typeTruncate>li {
+    display: inline!important;
+    vertical-align: baseline;
+}
+
+.listInline>li {
+    padding-right: 10px;
+}
+
+.areaLabel {
+	float: left;
+    margin-right: 10px;
+}
+.city {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: normal;
+}
+.mw-20 {
+	max-width: 100px !important;
+    display: inline-block;
+}
+
+

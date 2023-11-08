@@ -1,0 +1,118 @@
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.pr-1 {
+  padding-right: 4px;
+}
+.pl-1 {
+  padding-left: 4px;
+}
+.pa-0 {
+  padding: 0;
+}
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.searchbar-custom {
+  height: 40px;
+  text-indent: 20px;
+}
+.filter-custom {
+  height: 40px;
+}
+.icon-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 2px white;
+}
+.icon-search {
+  left: 20px;
+}
+.icon-close {
+  right: 0;
+  cursor: pointer;
+}
+.dropdown-custom li {
+  text-align: left !important;
+}
+.btn-custom {
+  text-align: left !important;
+  position: relative !important;
+}
+.dropdown-custom button.btn {
+  padding: 10px 10px !important;
+  width: 90%;
+}
+.caret-custom {
+  position: absolute !important;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.mt-2 {
+  margin-top: 8px;
+}
+.mt-4 {
+  margin-top: 16px;
+}
+.pt-2 {
+  padding-top: 8px;
+}
+.pt-4 {
+  padding-top: 16px;
+}
+.w-100 {
+  width: 100%;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.pb-4 {
+  padding-bottom: 16px;
+}
+.pb-2 {
+  padding-bottom: 8px;
+}
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.label-custom {
+  font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 16px;
+  }
+}

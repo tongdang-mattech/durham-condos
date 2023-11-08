@@ -1,0 +1,14 @@
+.slider {
+    width: 100% !important;
+}
+@media (max-width: 767px) {
+  #control-area{
+  	position: initial !important;
+  }
+  #properties-results{
+  	height:auto !important;
+  }
+  #control-area{
+  	height:auto !important;
+  }  
+}
